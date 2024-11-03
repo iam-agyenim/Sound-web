@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sound</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.birds.min.js" rel="stylesheet">
+</head>
+<body id="vanta-bg">
+    <div class="container">
+        <nav class="nav-bar">
+            <ul>
+                <a href="audio.html">Audio</a>
+                <a href="BTS.html">BTS</a>
+                <a href="TEAM.html">Team Members</a>
+           </ul>
+        </nav>
+     <!---
+        <div class="btn">
+            Download Audio
+        </div>
+        <div class="video-container">
+            <video class="video">
+                <source src="file_example_MP4_480_1_5MG.mp4" alt="Sound Video">
+            </video>
+        </div>
+      -->
+        <div class="marquee-container">
+            <h2>The Normal Day at NYUAD</h2>
+            <marquee class="marquee" scrollamount="8" behavior="scroll" direction="left">
+                This is a story about the normal daily life of stress and things NYUAD students go through.
+            </marquee>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.birds.min.js"></script>
+
+    <script>
+        VANTA.BIRDS({
+            el: "#vanta-bg", 
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00
+        });
+    </script>
+</body>
+</html>

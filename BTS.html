@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.birds.min.js" rel="stylesheet">
+</head>
+<body id="vanta-bg">
+    <a href="index.html" class="home-btn">Home</a>
+
+    <div class="carousel-container">
+        <div class="carousel">
+            <img src="bts1.jpg" alt="BTS Image 1" class="carousel-image">
+            <img src="bts2.jpg" alt="BTS Image 2" class="carousel-image">
+            <img src="bts3.jpg" alt="BTS Image 3" class="carousel-image">
+            <!-- Add more images as needed -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.birds.min.js"></script>
+
+    <script>
+        VANTA.BIRDS({
+            el: "#vanta-bg",  
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00
+        });
+    </script>
+</html>

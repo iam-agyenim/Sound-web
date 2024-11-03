@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Members</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.birds.min.js" rel="stylesheet">
+</head>
+<body id="vanta-bg">
+    <a href="index.html" class="home-btn">Home</a>
+
+    <div class="container2">
+        <h1>Meet Our Team</h1>
+        
+        
+        <div class="team-container">
+            <div class="team-member">
+                <img src="member1.jpg" alt="Member 1" class="team-image">
+                <h3>Amina</h3>
+                <p>Team Leader</p>
+            </div>
+            <div class="team-member">
+                <img src="member2.jpg" alt="Member 2" class="team-image">
+                <h3>Liz</h3>
+                <p>Team member</p>
+            </div>
+            <div class="team-member">
+                <img src="member3.jpg" alt="Member 3" class="team-image">
+                <h3>Maryam</h3>
+                <p>Team member</p>
+            </div>
+            <div class="team-member">
+                <img src="member4.jpg" alt="Member 4" class="team-image">
+                <h3>Richmond</h3>
+                <p>Team member</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.birds.min.js"></script>
+
+    <script>
+        VANTA.BIRDS({
+            el: "#vanta-bg",  // Changed to the body ID
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00
+        });
+    </script>
+</body>
+</html>
