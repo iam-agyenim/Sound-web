@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sound</title>
     <link href="styles.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.birds.min.js" rel="stylesheet">
+   
+       
 </head>
 <body id="vanta-bg">
+    <div class="overlay"></div>
     <div class="container">
         <nav class="nav-bar">
             <ul>
@@ -36,7 +38,6 @@
     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.birds.min.js"></script>
-
     <script>
         VANTA.BIRDS({
             el: "#vanta-bg", 
@@ -46,7 +47,10 @@
             minHeight: 200.00,
             minWidth: 200.00,
             scale: 1.00,
-            scaleMobile: 1.00
+            scaleMobile: 1.00,
+            color1: 0x5d5d6e,
+            color2: 0x52576e,
+            backgroundAlpha: 0 // Make Vanta background transparent
         });
     </script>
 </body>
