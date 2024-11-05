@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audio </title>
+    <title>Audio Display</title>
     <link href="styles.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.birds.min.js" rel="stylesheet">
 </head>
@@ -12,21 +12,18 @@
     <header class="header" style="top: 10%;">
         <h1>Audio-Display</h1>
     </header>
-    <!-- Home Button positioned at the top-left corner of the background -->
     <a href="index.html" class="home-btn">Home</a>
-    <a href="Morning-Life.mp3" class="audio-btn1">Download Audio</a>
+    <a href="audio.mp3" class="audio-btn1">Download Audio</a>
 
     <div class="container">
         <div class="video-container">
-            <video id="background-video" autoplay loop muted playsinline>
-                <source src="file_example_MP4_480_1_5MG.mp4" type="video/mp4">
+            <video id="background-video" loop  playsinline>
+                <source src="Commslab.MP4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <button id="audio-btn">Play Audio</button>
         </div>
     </div>
-    
-    <audio id="background-audio" src="Morning-Life.mp3"></audio>
 
     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
