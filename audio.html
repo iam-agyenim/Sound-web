@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audio</title>
+    <title>Audio </title>
     <link href="styles.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.birds.min.js" rel="stylesheet">
 </head>
 <body id="vanta-bg">
+    <div class="overlay"></div>
+    <header class="header" style="top: 10%;">
+        <h1>Audio-Display</h1>
+    </header>
     <!-- Home Button positioned at the top-left corner of the background -->
     <a href="index.html" class="home-btn">Home</a>
     <a href="Morning-Life.mp3" class="audio-btn1">Download Audio</a>
@@ -27,17 +31,19 @@
     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.birds.min.js"></script>
-
     <script>
         VANTA.BIRDS({
-            el: "#vanta-bg",  
+            el: "#vanta-bg", 
             mouseControls: true,
             touchControls: true,
             gyroControls: false,
             minHeight: 200.00,
             minWidth: 200.00,
             scale: 1.00,
-            scaleMobile: 1.00
+            scaleMobile: 1.00,
+            color1: 0x5d5d6e,
+            color2: 0x52576e,
+            backgroundAlpha: 0 // Make Vanta background transparent
         });
     </script>
 </body>
