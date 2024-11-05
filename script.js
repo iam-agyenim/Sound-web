@@ -1,15 +1,19 @@
-// Select the audio element and button
+// Select the audio button and video element
 const audioBtn = document.getElementById('audio-btn');
-const backgroundAudio = document.getElementById('background-audio');
+const backgroundVideo = document.getElementById('background-video');
 
-// Toggle play/pause for audio when button is clicked
+// Toggle play/pause for video when the button is clicked
 audioBtn.addEventListener('click', () => {
-    if (backgroundAudio.paused) {
-        backgroundAudio.play();
+    if (backgroundVideo.paused) {
+        backgroundVideo.play();
         audioBtn.textContent = 'Pause Audio';
     } else {
-        backgroundAudio.pause();
+        backgroundVideo.pause();
         audioBtn.textContent = 'Play Audio';
     }
 });
 
+// Reset button text to 'Play Audio' when the video ends
+backgroundVideo.addEventListener('ended', () => {
+    audioBtn.textContent = 'Play Audio';
+});
